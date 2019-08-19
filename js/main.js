@@ -8,12 +8,11 @@ $(document).ready(function(){
     const nav__btn = $('.navigation__btn');
     const nav__menu = $('.navigation__menu');
     const nav__li = $('.navigation__menu ul li a');
-    const item_imgs = $('.picture a')
+    const item_imgs = $('.picture a');
 
     const mainTl= new TimelineMax();
     const menuTl = new TimelineMax({paused: true});
     const skillTl = new TimelineMax();
-    const itemTl = new TimelineMax();
 
     mainTl.fromTo(
         main__img, 1.2, {height: '0%'}, {height:'60%', ease:Power2.easeInOut}
@@ -70,11 +69,11 @@ $(document).ready(function(){
             skillTl.time(0)
         })
         .addTo(controller);
-    
+        
     for(let i=0; i<item_imgs.length; i++){
         new ScrollMagic.Scene({
             triggerElement: item_imgs[i],
-            triggerHook:.6      
+            triggerHook:($(window).width()<=992)? 1:.6
         })
             .setClassToggle(item_imgs[i],'visible')
             .addTo(controller);  
