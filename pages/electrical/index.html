@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<link rel="shortcut icon" type="image/x-icon" href="/psyy/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/visual_popup.js"></script>
+	<script src="js/visual_banner.js"></script>
+	<script src="js/notice_popup.js"></script>
+	<script src="js/footer_banner.js"></script>
+	<title>한국전기안전공사</title>
+</head>
+<body>
+	<div class="layout">
+		<header id="header">
+			<div class="line"></div>
+			<div class="wrap">
+				<nav class="gnb_mobile">
+					<button class="btn_open"><img src="images/common/btn_open.png" alt="메뉴열기" /></button>
+					<div class="menu_group">
+						<div class="top_m">
+							<div class="searchBar">
+								<input type="text" placeholder="SEARCH"/>
+								<button><img src="images/common/search.png" alt="검색"></button>
+							</div>
+							<ul class="tnb clearfix">
+								<li><a href="#">로그인</a></li>
+								<li><a href="#">회원가입</a></li>
+							</ul>
+						</div>
+						<ul class="clearfix menu_m">
+							<li class="on">
+								<a href="#">정보공개</a>
+								<ul class="clearfix">
+									<li class="none"><a href="#">사전정보공표목록</a></li>
+									<li>
+										<a href="#">정보공개제도</a>
+										<ul>
+											<li><a href="#">정보공개소개</a></li>
+											<li><a href="#">정보공개청구</a></li>
+											<li><a href="#">행정정보공표</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">공공데이터 제공</a>
+										<ul>
+											<li><a href="#">제공제도안내</a></li>
+											<li><a href="#">제공대상목록 및 데이터</a></li>
+										</ul>
+									</li>
+									<li class="none"><a href="#">공공기관 사업실명제</a></li>							
+								</ul>
+							</li>
+							<li>
+								<a href="#">열린경영</a>
+								<ul>
+									<li class="none"><a href="#">경영공시</a></li>
+									<li class="none"><a href="#">자체공시</a></li>
+									<li class="none"><a href="#">반부패/청렴</a></li>
+									<li>
+										<a href="#">윤리경영</a>
+										<ul>
+											<li><a href="#">윤리경영 소개</a></li>
+											<li><a href="#">윤리규정</a></li>
+											<li><a href="#">윤리경영 활동</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">사회공헌</a>
+										<ul>
+											<li><a href="#">KESCO 사회공헌</a></li>
+											<li><a href="#">게시판</a></li>
+											<li><a href="#">주요사회공헌활동</a></li>
+										</ul>
+									</li>				
+								</ul>
+							</li>
+							<li>
+								<a href="#">고객마당</a>
+								<ul>
+									<li class="none"><a href="#">고객서비스현장</a></li>
+									<li>
+										<a href="#">온라인 민원</a>
+										<ul><li><a href="#">온라인민원 안내</a></li><li><a href="#">서식자료</a></li><li><a href="#">민원사례</a></li></ul>
+									</li>
+									<li>
+										<a href="#">사이버신문고</a>
+										<ul><li><a href="#">제보안내</a></li><li><a href="#">제보하기</a></li></ul>
+									</li>
+									<li class="none"><a href="#">질문과답변</a></li>
+									<li>
+										<a href="#">통합자료실</a>
+										<ul><li><a href="#">통합자료실</a></li><li><a href="#">업무처리방법메뉴얼</a></li></ul>
+									</li>
+									<li>
+										<a href="#">입찰게시판</a>
+										<ul>
+											<li><a href="#">입찰공고</a></li>
+											<li><a href="#">자료마당</a></li>
+											<li><a href="#">알림마당</a></li>
+											<li><a href="#">혁신마당</a></li>
+											<li><a href="#">정보공개</a></li>
+											<li><a href="#">수의계약</a></li>
+											<li><a href="#">입찰Q&A</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li >
+								<a href="#">홍보마당</a>
+								<ul>
+									<li><a href="#">KESCO 새소식</a><ul><li><a href="#">뉴스/공지</a></li></ul></li>
+									<li><a href="#">홍보물</a><ul><li><a href="#">동영상자료</a></li><li><a href="#">인쇄/이미지자료</a></li><li><a href="#">포토게시판</a></li></ul></li>
+									<li><a href="#">전기법령정보</a><ul><li><a href="#">최근개정법령</a></li></ul></li>
+									<li><a href="#">정기간행물</a><ul><li><a href="#">정기간행물(전기안전)</a></li><li><a href="#">정기간행물(전기안전기술)</a></li></ul></li>
+									<li class="none"><a href="#">전기안전요령</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">공사소개</a>
+								<ul>
+									<li>
+										<a href="#">한국전기안전공사 소개</a>
+										<ul>
+											<li><a href="#">비전/핵심가치</a></li>
+											<li><a href="#">연혁</a></li>
+											<li><a href="#">CEO</a></li>
+											<li><a href="#">조직도</a></li>
+											<li><a href="#">전국사업소찾기</a></li>
+											<li><a href="#">직원찾기</a></li>
+											<li><a href="#">CI</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">주요사업분야</a>
+										<ul>
+											<li><a href="#">전기설비의 안전관리</a></li>
+											<li><a href="#">기기진단</a></li>
+											<li><a href="#">전력계통분석</a></li>
+											<li><a href="#">진단의뢰</a></li>
+											<li><a href="#">해외진단사업</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">첨단장비보유현황</a>
+										<ul>
+											<li><a href="#">첨단장비 보유 현황</a></li>
+											<li><a href="#">일반용전기설비안전점검</a></li>
+											<li><a href="#">검사업무</a></li>
+											<li><a href="#">전기안전관리대행</a></li>
+											<li><a href="#">안전진단</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">열린채용</a>
+										<ul>
+											<li><a href="#">채용공고</a></li>
+											<li><a href="#">직무명세서</a></li>
+											<li><a href="#">인사제도</a></li>
+											<li><a href="#">복리후생제도</a></li>
+											<li><a href="#">지원도우미</a></li>
+										</ul>
+									</li>
+									<li class="none"><a href="#">안우회</a></li>
+									<li>
+										<a href="#">찾아오시는 길</a>
+										<ul>
+											<li><a href="#">한국전기안전공사</a></li>
+											<li><a href="#">전기안전연구원</a></li>
+											<li><a href="#">전기안전기술교육원</a></li>
+											<li><a href="#">안전인증센터</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<button class="bnt_close"><img src="images/common/btn_close.png" alt="메뉴닫기" /></button>
+					</div>	
+				</nav>
+				<div class="top">
+					<ul class="tnb">
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">회원가입</a></li>
+					</ul>
+					<div class="searchBar">
+						<input type="text" placeholder="SEARCH"/>
+						<button><img src="images/common/search.png" alt="검색"></button>
+					</div>
+				</div>
+				<h1 class="logo"><a href="index.html"><img src="images/common/logo.png" alt="한국전기안전공사"></a></h1>
+				<nav class="gnb_pc">
+					<ul class="clearfix">
+						<li>
+							<a href="#">정보공개</a>
+							<ul class="clearfix">
+								<li><a href="#">사전정보공표목록</a></li>
+								<li>
+									<a href="#">정보공개제도</a>
+									<ul>
+										<li><a href="#">정보공개소개</a></li>
+										<li><a href="#">정보공개청구</a></li>
+										<li><a href="#">행정정보공표</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">공공데이터 제공</a>
+									<ul>
+										<li><a href="#">제공제도안내</a></li>
+										<li><a href="#">제공대상목록 및 데이터</a></li>
+									</ul>
+								</li>
+								<li><a href="#">공공기관 사업실명제</a></li>							
+							</ul>
+						</li>
+						<li>
+							<a href="#">열린경영</a>
+							<ul>
+								<li><a href="#">경영공시</a></li>
+								<li><a href="#">자체공시</a></li>
+								<li><a href="#">반부패/청렴</a></li>
+								<li>
+									<a href="#">윤리경영</a>
+									<ul>
+										<li><a href="#">윤리경영 소개</a></li>
+										<li><a href="#">윤리규정</a></li>
+										<li><a href="#">윤리경영 활동</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">사회공헌</a>
+									<ul>
+										<li><a href="#">KESCO 사회공헌</a></li>
+										<li><a href="#">게시판</a></li>
+										<li><a href="#">주요사회공헌활동</a></li>
+									</ul>
+								</li>				
+							</ul>
+						</li>
+						<li>
+							<a href="#">고객마당</a>
+							<ul>
+								<li><a href="#">고객서비스현장</a></li>
+								<li>
+									<a href="#">온라인 민원</a>
+									<ul><li><a href="#">온라인민원 안내</a></li><li><a href="#">서식자료</a></li><li><a href="#">민원사례</a></li></ul>
+								</li>
+								<li>
+									<a href="#">사이버신문고</a>
+									<ul><li><a href="#">제보안내</a></li><li><a href="#">제보하기</a></li></ul>
+								</li>
+								<li><a href="#">질문과답변</a></li>
+								<li>
+									<a href="#">통합자료실</a>
+									<ul><li><a href="#">통합자료실</a></li><li><a href="#">업무처리방법메뉴얼</a></li></ul>
+								</li>
+								<li>
+									<a href="#">입찰게시판</a>
+									<ul>
+										<li><a href="#">입찰공고</a></li>
+										<li><a href="#">자료마당</a></li>
+										<li><a href="#">알림마당</a></li>
+										<li><a href="#">혁신마당</a></li>
+										<li><a href="#">정보공개</a></li>
+										<li><a href="#">수의계약</a></li>
+										<li><a href="#">입찰Q&A</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li >
+							<a href="#">홍보마당</a>
+							<ul>
+								<li><a href="#">KESCO 새소식</a><ul><li><a href="#">뉴스/공지</a></li></ul></li>
+								<li><a href="#">홍보물</a><ul><li><a href="#">동영상자료</a></li><li><a href="#">인쇄/이미지자료</a></li><li><a href="#">포토게시판</a></li></ul></li>
+								<li><a href="#">전기법령정보</a><ul><li><a href="#">최근개정법령</a></li></ul></li>
+								<li><a href="#">정기간행물</a><ul><li><a href="#">정기간행물(전기안전)</a></li><li><a href="#">정기간행물(전기안전기술)</a></li></ul></li>
+								<li><a href="#">전기안전요령</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">공사소개</a>
+							<ul>
+								<li>
+									<a href="#">한국전기안전공사 소개</a>
+									<ul>
+										<li><a href="#">비전/핵심가치</a></li>
+										<li><a href="#">연혁</a></li>
+										<li><a href="#">CEO</a></li>
+										<li><a href="#">조직도</a></li>
+										<li><a href="#">전국사업소찾기</a></li>
+										<li><a href="#">직원찾기</a></li>
+										<li><a href="#">CI</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">주요사업분야</a>
+								</li>
+								<li>
+									<a href="#">첨단장비보유현황</a>
+									<ul>
+										<li><a href="#">첨단장비 보유 현황</a></li>
+										<li><a href="#">일반용전기설비안전점검</a></li>
+										<li><a href="#">검사업무</a></li>
+										<li><a href="#">전기안전관리대행</a></li>
+										<li><a href="#">안전진단</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">열린채용</a>
+									<ul>
+										<li><a href="#">채용공고</a></li>
+										<li><a href="#">직무명세서</a></li>
+										<li><a href="#">인사제도</a></li>
+										<li><a href="#">복리후생제도</a></li>
+										<li><a href="#">지원도우미</a></li>
+									</ul>
+								</li>
+								<li><a href="#">안우회</a></li>
+								<li>
+									<a href="#">찾아오시는 길</a>
+									<ul>
+										<li><a href="#">한국전기안전공사</a></li>
+										<li><a href="#">전기안전연구원</a></li>
+										<li><a href="#">전기안전기술교육원</a></li>
+										<li><a href="#">안전인증센터</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="gnb_bg"></div>	
+			<div class="gnb_kbg"></div>	
+		</header>
+		<section class="visual">
+			<h2>팝업</h2>
+			<div class="popup">
+				<ul>
+					<li><div class="pop">1번팝업</div></li>
+					<li><div class="pop">2번팝업</div></li>
+					<li><div class="pop">3번팝업</div></li>
+				</ul>
+				<div class="paging">
+					<button>1번팝업</button>
+					<button>2번팝업</button>
+					<button>3번팝업</button>
+				</div>
+			</div>
+			<div class="text">
+				<div class="wrap">
+					<span class="txt1"><strong>국민의 안전</strong>을 지켜주는 <br />스마트 <strong>전기안전 선도기관</strong></span>
+					<span class="txt2">보다 나은 내일,<br />전기 안전의 가치에 사회적 가치를 더하다</span>
+				</div>	
+			</div>
+			<div class="issue clearfix">
+				<div class="inner">
+					<div class="close">
+						<div class="disclosure"><a href="#"><strong>경영공시</strong><span>자세히보기</span></a></div>
+						<div class="information"><a href="#"><strong>사전 정보 공표</strong><span>자세히보기</span></a></div>
+					</div>
+					<div class="battery"><strong>현재예비전력</strong><img src="images/main/visual_battery.png" alt="현재예비전력" /><span class="num">37%</span><span class="cmt">정상상황<br />전력수급안정</span></div>
+				</div>	
+				<a href="#" class="award"></a>
+			</div>
+			<div class="quick">
+				<div class="wrap">
+					<div class="inner clearfix">
+						<div class="quick_menu"><a href="#"><img src="images/main/visual_quick1.png" alt="질문과 답변" /><span>질문과 답변</span></a></div>
+						<div class="quick_menu"><a href="#"><img src="images/main/visual_quick2.png" alt="국민 제안 공모" /><span>국민 제안 공모</span></a></div>
+						<div class="quick_menu"><a href="#"><img src="images/main/visual_quick3.png" alt="검사/점검 신청" /><span>검사/점검 신청</span></a></div>
+						<div class="quick_menu"><a href="#"><img src="images/main/visual_quick4.png" alt="수수료 안내" /><span>수수료 안내</span></a></div>
+						<div class="quick_menu"><a href="#"><img src="images/main/visual_quick5.png" alt="서식 자료실" /><span>서식 자료실</span></a></div>
+						<div class="quick_menu"><a href="#"><img src="images/main/visual_quick6.png" alt="확인증 출력" /><span>확인증 출력</span></a></div>
+						<div class="quick_menu"><a href="#"><img src="images/main/visual_quick7.png" alt="직원 찾기" /><span>직원 찾기</span></a></div>
+					</div>
+				</div>
+				<div class="ctrl_btn">
+					<button class="quick_prev"><img src="images/main/visual_quick_prev.png" alt="" />이전메뉴보기</button>
+					<button class="quick_next"><img src="images/main/visual_quick_next.png" alt="" />다음메뉴보기</button>
+				</div>
+			</div>
+		</section>	
+		<section class="notice">
+			<div class="wrap clearfix">
+				<h2>공지사항</h2>
+				<div class="satefy"><img src="images/main/notice_safety_m.jpg" alt="" /><strong>전기 안전 <br />요령</strong><a href="#" class="more">자세히 보기</a></div>
+				<div class="tab_notice">
+					<ul class="clearfix">
+						<li class="on">
+							<button>공지사항</button>
+							<div class="tab">
+								<ul>
+									<li><a href="#"><span>19.05.16</span><em>공지</em><strong>2019년 전기안전관리분야 창업지원 프로그램 모집 공고 기간연장 알림 (~5.24)</strong></a></li>
+									<li><a href="#"><span>19.05.14</span><em>공지</em><strong>2019년도 『전기안전 기술세미나』 개최 안내</strong></a></li>
+									<li><a href="#"><span>19.05.14</span><em>공지</em><strong>퇴직자 경력증명서 발급 신청 안내입니다.</strong></a></li>
+									<li><a href="#"><span>19.05.08</span><em>공지</em><strong>2019년도 자체청렴도 조사 관련 개인정보활용 공지</strong></a></li>
+									<li><a href="#"><span>19.05.05</span><em>공지</em><strong>한국전기안전공사 위촉연구원 공개채용</strong></a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<button>뉴스</button>
+							<div class="tab">
+								<ul>
+									<li><a href="#"><span>19.05.31</span><em>뉴스</em><strong>	사내벤처 1기 'ADD벤처' 출범</strong></a></li>
+									<li><a href="#"><span>19.05.27</span><em>뉴스</em><strong>축사시설 전기안전 위해 정책보험사와 맞손</strong></a></li>
+									<li><a href="#"><span>19.05.23</span><em>뉴스</em><strong>'2019 대한민국전기안전대상' 성황리에 개최</strong></a></li>
+									<li><a href="#"><span>19.05.22</span><em>뉴스</em><strong>	민간재난관리자원단체와 재난안전협력 강화 약속</strong></a></li>
+									<li><a href="#"><span>19.05.14</span><em>뉴스</em><strong>'2019 대한민국 전기안전대상' 5월 21일 개막</strong></a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<button>입찰공고</button>
+							<div class="tab">
+								<ul>
+									<li><a href="#"><span>19.05.11</span><em>입찰중</em><strong>피뢰기누설전류측정기 20대 구입</strong></a></li>
+									<li><a href="#"><span>19.04.14</span><em>입찰중</em><strong>절연유퓨란분석장비 1대 구입</strong></a></li>
+									<li><a href="#"><span>19.04.21</span><em>입찰중</em><strong>고객만족도조사 및 CS교육용역</strong></a></li>
+									<li><a href="#"><span>19.03.14</span><em>입찰완료</em><strong>광학도립현미경 1대 구입</strong></a></li>
+									<li><a href="#"><span>19.03.04</span><em>입찰완료</em><strong>몰드TR용PD장비 3대 구입</strong></a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="popup">
+					<ul>
+						<li><a href="#"><img src="images/main/notice_pop1.jpg" alt="2019 통계 빅데이터 자료분석 / 활용대회" /></a></li>
+						<li><a href="#"><img src="images/main/notice_pop2.jpg" alt="정부보조금 부정수급 집중신고기간" /></a></li>
+						<li><a href="#"><img src="images/main/notice_pop3.jpg" alt="2018년 국민권익위원회주관 공공기관 청렴도 측정결과" /></a></li>
+					</ul>
+					<div class="ctrl_panel">
+						<h2>팝업존</h2>
+						<div class="inner">
+							<button class="btn_prev"><img src="images/main/notice_prev.jpg" alt="이전팝업가기" /></button>
+							<button class="btn_next"><img src="images/main/notice_next.jpg" alt="다음팝업가기" /></button>
+							<button class="btn_stop"><img src="images/main/notice_stop.jpg" alt="일시정지" /></button>
+							<button class="btn_play"><img src="images/main/notice_play.jpg" alt="팝업재생" /></button>
+							<div class="num"><span class="current">1</span>/<span class="total">1</span></div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<section class="business">
+			<div class="wrap clearfix">
+				<div class="tit"><h2><span>한국전기안전공사</span>사업분야</h2></div>
+				<ul>
+					<li><a href="#"><span class="bizCon"><strong>전기설비의<br />안전관리</strong><em>각종 발전설비 등의 설치공사를 완료하고, 그 전기설비가 공사계획의 인가 에 적합한 지의 여부에 대한 검사를  위탁받아 수행하는 업무입니다.</em><span class="more">MORE</span></span></a></li>
+					<li><a href="#"><span class="bizCon"><strong>기기진단</strong><em>고객의 요청으로 전기설비에 대한 진단결과를 제공하고, 전기설비의 이상유무 및 운영상의 문제점을 도출하여 전기설비 개·보수를 위한 최적의 운영방안을 제시하는 업무입니다.</em><span class="more">MORE</span></span></a></li>
+					<li><a href="#"><span class="bizCon"><strong>전력계통분석</strong><em>전력계통의 고장전류, 보호계전 시스템의 보호협조, 전력조류 계산, 전압강하 계산, 안정도 해석 등을 수행합니다.</em><span class="more">MORE</span></span></a></li>
+					<li><a href="#"><span class="bizCon"><strong>진단의뢰</strong><em> 고객의 요청으로 전기설비에 대한 정밀진단결과를 제공하고, 전기설비의 사고를 사전에 예방하며, 사고로 인한 생산손실을 최소화 하고자 고객의 전기설비에 대한 안정성과 적합성을 검증하는 업무입니다.</em><span class="more">MORE</span></span></a></li>
+					<li><a href="#"><span class="bizCon"><strong>해외진단사업</strong><em>해외플랜트 전기설비에 대한 진단 및 시험 업무을 수행합니다.</em><span class="more">MORE</span></span></a></li>
+				</ul>
+			</div>
+		</section>
+		<section class="pr">
+			<div class="video">
+				<div class="wrap">
+					<div class="tit">
+						<h2>홍보동영상</h2>
+						<a href="#"><img src="images/main/pr_more.jpg" alt="" />더많은 자료보기</a>
+					</div>
+					<iframe src="https://www.youtube.com/embed/knuqtl6A6Q4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="한국전기안전공사 홍보동영상"></iframe>
+				</div>
+			</div>
+			<div class="print">
+				<div class="calendar clearfix">
+					<div class="tit"><h2>인쇄자료</h2><a href="#">더 많은 자료보기</a></div>
+					<div class="list">
+						<div class="listItem"><a href="#"><span class="txt">2019 <br />전기안전캘린더</span></a></div>
+						<div class="listItem"><a href="#"><span class="txt">2018 전기안전 콘텐츠 <br />공모전 수상작 광고시안</span></a></div>
+						<div class="listItem"><a href="#"><span class="txt">전기안전점검<br />광고시안</span></a></div>
+					</div>
+				</div>
+				<div class="magazine clearfix">
+					<div class="tit"><h2>정기간행물</h2><a href="#">더 많은 자료보기</a></div>
+					<div class="list">
+						<div class="listItem"><a href="#"><span class="txt">전기안전 3월호<br />Vol. 162</span></a></div>
+						<div class="listItem"><a href="#"><span class="txt">전기안전기술 3,4월호 <br />Vol. 265</span></a></div>
+						<div class="listItem"><a href="#"><span class="txt">전기안전 2월호<br />Vol. 161</span></a></div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="footer">
+			<div class="footer_top wrap">
+				<div class="banner">
+					<ul>
+						<li><a href="#" target="_blank" title="새창열림"><img src="images/common/footer_banner1.jpg" alt="" /></a></li>
+						<li><a href="#" target="_blank" title="새창열림"><img src="images/common/footer_banner2.jpg" alt="" /></a></li>
+						<li><a href="#" target="_blank" title="새창열림"><img src="images/common/footer_banner3.jpg" alt="" /></a></li>
+						<li><a href="#" target="_blank" title="새창열림"><img src="images/common/footer_banner4.jpg" alt="" /></a></li>
+						<li><a href="#" target="_blank" title="새창열림"><img src="images/common/footer_banner5.jpg" alt="" /></a></li>
+					</ul>
+				</div>
+				<div class="ctrl_btn">
+					<button class="prev"><img src="images/common/footer_prev.jpg" alt="이전보기" /></button>
+					<button class="next"><img src="images/common/footer_next.jpg" alt="다음보기" /></button>
+				</div>
+			</div>
+			<div class="footer_bottom">
+				<div class="f_logo">
+					<div class="wrap"><a href="index.html"><img src="images/common/f_logo.png" alt="한국전기안전공사" /></a></div>
+				</div>		
+				<div class="f_container">
+					<div class="wrap clearfix">
+						<div class="site">
+							<strong>사이트 바로가기</strong>
+							<div class="site_table">
+								<ul class="clearfix">
+									<li><a href="#" target="_blank" title="새창열기">사이버사업소</a></li>
+									<li><a href="#" target="_blank" title="새창열기">전기안전교육원</a></li>
+									<li><a href="#" target="_blank" title="새창열기">전기안전포털시스템</a></li>
+									<li><a href="#" target="_blank" title="새창열기">안전인증센터</a></li>
+									<li><a href="#" target="_blank" title="새창열기">전기안전연구원</a></li>
+									<li><a href="#" target="_blank" title="새창열기">입찰게시판</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="inner">
+							<ul class="f_nav clearfix">
+								<li class="privacy"><a href="#">개인정보처리방침</a></li>
+								<li><a href="#">이메일무단수집거부</a></li>
+								<li><a href="#">KESCO Help-Line</a></li>
+							</ul>
+							<address><span>(우 55365)  전북 완주군 이서면 안전로 111</span><span>TEL : 1588-7500</span><span>FAX : 063-716-9638</span></address>
+							<div class="copyright">COPYRIGHT (C) 2013 KOREA ELECTRICAL SAFETY <span>CORPORATION  ALL RIGHT RESERVED.</span></div>
+						</div>
+						<div class="sns">
+							<strong>한국전기안전공사 SNS</strong>
+							<ul>
+								<li><a href="#" target="_blank" title="새창열기"><img src="images/common/footer_facebook.png" alt="" /><span>KESCO </span>FACEBOOK</a></li>
+								<li><a href="#" target="_blank" title="새창열기"><img src="images/common/footer_blog.png" alt="" /><span>KESCO </span>BLOG</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>

@@ -1,0 +1,35 @@
+@import url(font.css);
+@import url(default.css);
+@import url('https://fonts.googleapis.com/css?family=Bangers|Kanit|Teko&display=swap');
+body{font-family: 'Noto Sans KR','맑은고딕','Malgun Gothic', 'Apple SD Gothic Neo', '돋움','Dotum', sans-serif;font-size:20px;line-height:1.47;color:#111;font-weight:500;word-break:keep-all;letter-spacing:-0.05em;background:#fff8f8;}
+
+a{text-decoration:none;color:inherit;}
+
+body{overflow:hidden;}
+.wrap{width:1600px;margin:0 auto;}
+.layout{width:100%;min-width:1600px;position:absolute;left:0;top:0;overflow:hidden;}
+
+#header{position:relative;height:70px;text-align:center;z-index:300;}
+#header .logo_coca{float:right;margin-top:15px;}
+#header .logo{position:relative;float:left;margin-top:15px;z-index:301;}
+#header .button_wrap{margin:0 300px;}
+#header .button_wrap .menu_open{margin-top:15px;padding:5px 5px 2px 5px;border:2px solid #111;}
+#header #gnb{position:absolute;top:0;left:-80%;width:60%;background:#fff;font-family: 'Kanit', sans-serif;z-index:300;}
+#header #gnb.bg1{background:#fff url(../images/menu_bg1.jpg) center center no-repeat;background-size:cover;}
+#header #gnb.bg2{background:#fff url(../images/menu_bg2.jpg) center center no-repeat;background-size:cover;}
+#header #gnb.bg3{background:#fff url(../images/menu_bg3.jpg) center center no-repeat;background-size:cover;}
+#header #gnb .menu_close{float:right;margin:20px 50px 0 0;font-size:30px;text-decoration:underline;}
+#header #gnb .menu{margin-top:230px;font-size:80px;font-weight:600;}
+#header #gnb .menu a{position:relative;display:inline-block;padding:0 2px;vertical-align:top;color:#fff;text-shadow: -2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000, 2px 2px 0 #000;overflow:hidden;}
+#header #gnb .menu a:after{position:absolute;bottom:50px;left:-100%;width:100%;height:5px;background:#6e2c7a;content:'';}
+#header #gnb .menu a:hover{text-shadow:none;}
+#header #gnb .menu a:hover:after{height:5px;transform:translateX(200%);transition:1s;}
+
+
+#header #gnb .sns{position:absolute;bottom:50px;right:50px;line-height:1.2;font-size:30px;}
+#header #gnb span{position:absolute;bottom:50px;left:50px;font-size:30px;font-weight:400;}
+
+#footer{position:relative;padding:50px 0;background:#fff;text-align:center;}
+#footer .f_nav li{display:inline-block;margin:30px 10px;}
+#footer .f_nav li.privacy{font-weight:600;}
+#footer .top{position:absolute;top:0;right:0;padding:20px 25px;background:#ff8983;color:#fff;font-weight:500;}

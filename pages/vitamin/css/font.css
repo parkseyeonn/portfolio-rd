@@ -1,0 +1,44 @@
+@font-face { font-family: 'BMHANNAPro'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Noto Sans KR Light'), local('NotoSansKR-Light'), url(font/NotoSans-Light.eot);
+	src: url(font/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+	     url(font/NotoSans-Light.woff2) format('woff2'),
+	     url(font/NotoSans-Light.woff) format('woff'),
+	     url(font/NotoSans-Light.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'), url(font/NotoSans-Regular.eot);
+	src: url(font/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+	     url(font/NotoSans-Regular.woff2) format('woff2'),
+	     url(font/NotoSans-Regular.woff) format('woff'),
+	     url(font/NotoSans-Regular.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Noto Sans KR Medium'), local('NotoSansKR-Medium'), url(font/NotoSans-Medium.eot);
+	src: url(font/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+	     url(font/NotoSans-Medium.woff2) format('woff2'),
+	     url(font/NotoSans-Medium.woff) format('woff'),
+	     url(font/NotoSans-Medium.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'), url(font/NotoSans-Bold.eot);
+	src: url(font/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+	     url(font/NotoSans-Bold.woff2) format('woff2'),
+	     url(font/NotoSans-Bold.woff) format('woff'),
+	     url(font/NotoSans-Bold.otf) format('opentype');
+}
