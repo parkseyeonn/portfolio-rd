@@ -1,0 +1,88 @@
+@import url(font.css);
+body{font-family: 'Noto Sans KR','맑은고딕','Malgun Gothic', 'Apple SD Gothic Neo', '돋움','Dotum', sans-serif;font-size:16px;line-height:1.47;color:#2d2d2d;font-weight:300;word-break:keep-all;letter-spacing:-0.05em;}
+
+a{text-decoration:none;color:inherit;}
+
+::selection{background:#000;color:#fff;}
+::-moz-selection{background:#000;color:#fff;}
+
+.wrap{width:1200px;margin:0 auto;}
+.layout{width:100%;min-width:1200px;position:relative;overflow:hidden;}
+
+@media screen and (max-width:1200px){
+	body{font-size:13px;font-weight:400;}
+	.wrap{width:auto;margin:0 5%;}
+	.layout{min-width:0;}
+}
+
+#header{position:fixed;left:0;top:0;height:80px;width:100%;z-index:300;background:#fff;}
+#header .logo{position:absolute;top:12px;left:50%;margin-left:-19px;}
+#header .logo a{display:block;}
+#header .gnb_pc{position:relative;}
+#header .gnb_pc>ul>li{float:left;width:130px;text-align:center;}
+#header .gnb_pc>ul>li:nth-child(5){margin-left:160px;}
+#header .gnb_pc>ul>li>a{position:relative;display:block;font-weight:600;padding:28px 0;}
+#header .gnb_pc>ul>li>a:after{position:absolute;content:'';width:0;height:3px;background:#000;bottom:0;left:0;transition:0.3s;}
+#header .gnb_pc>ul>li>ul{display:none;background:#fff;position:relative;z-index:302;padding:10px 0 0 0;height:210px;}
+#header .gnb_pc>ul>li>ul>li>a{display:block;padding:5px 0;font-size:14px;font-weight:600;}
+#header .gnb_pc>ul>li>ul>li>a:hover{text-decoration:underline;color:#004497;}
+#header .gnb_pc .gnb_bg{display:none;background:#fff;height:220px;width:100%;position:absolute;top:80px;left:0;z-index:301;}
+#header .gnb_mobile{display:none;}
+
+@media screen and (min-width:1201px){
+	#header .gnb_pc>ul>li.on>a:after{width:100%;}
+
+	#header.scroll{background:rgba(255,255,255,0.7);box-shadow:0 0 5px rgba(0,0,0,0.5);height:65px;}
+	#header.scroll .logo{margin-left:-15px;}
+	#header.scroll .logo a img{width:30px;}
+	#header.scroll .gnb_pc>ul>li>a{padding:21px 0;}
+	#header.scroll .gnb_pc .gnb_bg{top:65px;}
+	#header.on{background:#fff;}
+}
+
+@media screen and (max-width:1200px){
+	#header{position:absolute;height:50px;}
+	#header .logo{margin-left:-11px;}
+	#header .logo a img{width:22px;}
+	#header .gnb_pc{display:none;}
+	#header .gnb_mobile{display:block;float:right;}
+	#header .gnb_mobile .btn_open{padding:17px 15px 13px 15px;}
+	#header .gnb_mobile .menu_group{display:block;position:absolute;right:-50%;top:0;width:50%;z-index:302;background:#f4f4f4;}
+	#header .gnb_mobile .menu_group>ul{margin:70px 10% 0 10%;}
+	#header .gnb_mobile .menu_group>ul>li>a{font-size:16px;display:block;padding:15px 0;font-weight:500;background:url(../images/common/gnb_m_open.png) right center no-repeat;}
+	#header .gnb_mobile .menu_group>ul>li>ul{display:none;margin:0 7%;background:#fff;border:2px solid #2d2d2d;padding:10px 0;}
+	#header .gnb_mobile .menu_group>ul>li>ul>li>a{display:block;font-weight:500;padding:5px 0 5px 10%;}
+	#header .gnb_mobile .menu_group .btn_close{position:absolute;right:10%;top:20px;}
+	
+	#header .gnb_mobile .menu_group>ul>li.on>a{background-image:url(../images/common/gnb_m_close.png);}
+
+	#header .gnb_mobile .gnb_kbg{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:301;}
+}
+
+@media screen and (max-width:640px){
+	#header .gnb_mobile .menu_group{width:70%;right:-70%;}
+}
+
+#footer{background:#f4f4f4;}
+#footer .top{border-bottom:2px solid #000;}
+#footer .top .f_logo{display:inline-block;margin:20px 0;}
+#footer .top .sns{float:right;}
+#footer .top .sns li{display:inline-block;margin:20px 0 0 5px;}
+#footer .bottom{padding:40px 0;}
+#footer .bottom .f_nav{font-weight:500;margin-bottom:10px;}
+#footer .bottom .f_nav li{display:inline-block;margin-right:30px;}
+#footer .bottom .f_nav li.pri{font-weight:600;color:#224065;}
+#footer .bottom address{font-weight:400;margin-right:400px;}
+#footer .bottom address span{margin-right:30px;display:inline-block;}
+#footer .bottom .copyright{color:#b5b5b5;font-weight:500;}
+
+@media screen and (max-width:1200px){
+	#footer .top{text-align:center;}
+	#footer .top .f_logo{margin:20px 0;width:126px;}
+	#footer .top .sns{float:none;}
+	#footer .top .sns li{margin:0 0 20px 5px;}
+	#footer .bottom{text-align:center;padding:30px 0;}
+	#footer .bottom .f_nav li{margin:0 10px;}
+	#footer .bottom address{margin-right:0;}
+	#footer .bottom address span{margin:0 10px;}
+}
